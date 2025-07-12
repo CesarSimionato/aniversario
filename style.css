@@ -5,6 +5,21 @@
     user-select: none;
 }
 
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background: rgb(10, 16, 51);
+    color-scheme: dark;
+}
+
+/* Força tema escuro */
+@media (prefers-color-scheme: dark) {
+    html, body {
+        color-scheme: dark;
+    }
+}
+
 .stars,
 .twinkling,
 .clouds {
