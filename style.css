@@ -194,3 +194,11 @@ p {
         padding-bottom: env(safe-area-inset-bottom);
     }
 }
+
+/* Tentativa para bottom bar dourada */
+@supports (padding: max(0px)) {
+    body {
+        padding-bottom: max(0px, env(safe-area-inset-bottom));
+        background: linear-gradient(to bottom, rgb(10, 16, 51) 0%, rgb(10, 16, 51) calc(100% - env(safe-area-inset-bottom)), #c8af6c calc(100% - env(safe-area-inset-bottom)), #c8af6c 100%);
+    }
+}
