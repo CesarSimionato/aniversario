@@ -46,14 +46,14 @@
 
 .frame {
     margin: 20px;
-    padding: 40px;
+    padding: 20px;
     border: 1px solid #fff;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 28px;
+    gap: 20px;
 }
 
 h1 {
