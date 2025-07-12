@@ -141,3 +141,7 @@ p {
         background-position: 10000px 0;
     }
 }
+
+.small-text {
+    font-size: 1rem !important;
+}
