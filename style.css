@@ -150,3 +150,32 @@ p {
 .small-text {
     font-size: 1.2rem !important;
 }
+
+.realistic-moon::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    box-shadow: 
+        20px 8px 0 rgba(255, 255, 255, 0.6),
+        35px 20px 0 rgba(255, 255, 255, 0.4),
+        15px 35px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* Tentativas para personalizar bottom bar */
+@supports (padding: max(0px)) {
+    body {
+        padding-bottom: max(0px, env(safe-area-inset-bottom));
+    }
+}
+
+/* Para Safari iOS */
+@supports (-webkit-touch-callout: none) {
+    body {
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+}
