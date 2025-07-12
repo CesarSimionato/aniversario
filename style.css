@@ -46,7 +46,7 @@
 
 .frame {
     margin: 40px;
-    padding: 20px;
+    padding: 40px;
     border: 1px solid #fff;
     text-align: center;
     display: flex;
@@ -82,6 +82,10 @@ p {
     align-items: center;
     justify-content: center;
     gap: 20px;
+}
+
+.date p {
+    font-size: 1.2rem;
 }
 
 .date .line {
